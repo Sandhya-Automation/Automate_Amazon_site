@@ -1,0 +1,18 @@
+[    5065ms] [ERROR] Error logged with the Track&Report JS errors API(http://tiny/1covqr6l8/wamazindeClieUserJava): {"m":"Late loading module @m/mash","csm":"v5 ueLogError callee","logLevel":"WARN","attribution":"MIX","pageURL":"https://www.amazon.co.uk/","s":[],"t":3593} {m: Late loading module @m/mash, name: undefined, type: undefined, csm: v5 ueLogError callee, logLevel: WARN} @ https://images-na.ssl-images-amazon.com/images/I/215h87l68bL.js:3
+[   18238ms] [WARNING] The resource https://redirect.prod.experiment.routing.cloudfront.aws.a2z.com/x.png?timestamp=1776578854939 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.amazon.co.uk/:0
+[   25391ms] [WARNING] The resource https://redirect.prod.experiment.routing.cloudfront.aws.a2z.com/x.png?timestamp=1776578854939 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.amazon.co.uk/:0
+[   30430ms] [WARNING] The resource https://redirect.prod.experiment.routing.cloudfront.aws.a2z.com/x.png?timestamp=1776578854939 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.amazon.co.uk/:0
+[   37012ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://www.amazon.co.uk/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.co.uk%2F%3Fref_%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=gbflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0:0
+[   51545ms] [WARNING] AbortFromContinueButtonClick @ https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:345
+[   51546ms] [ERROR] Unable to publish metrics Error: Expected field name to be a string, but it was a undefined
+    at c.default (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:142:83)
+    at b.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:162:216)
+    at b.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:167:386)
+    at https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:135:303
+    at a.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:134:161)
+    at a.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:135:50)
+    at a.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:138:169)
+    at a.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:19:245)
+    at a.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:423:232)
+    at a.value (https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:421:461) @ https://m.media-amazon.com/images/I/71DSCSLyZ5L.js?AUIClients/IdentityWebAuthnAssets:15
+[   92231ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://www.amazon.co.uk/ap/signin:0

@@ -1,0 +1,12 @@
+tc1: validate navigation to the Homescreen and validting the UI
+expected results: 1. availability of search box
+                 2. amazon.in logo
+                3. availability of accounts and list
+                4. availability of returns and orders
+                5. availability of cart btn
+
+Assignment- 
+tc1: validate the search results of Iphone on results screen -done
+tc2: validated the cart items
+tc3: validate checkout screen
+
