@@ -1,7 +1,11 @@
 import {LoginPage} from "../pages/loginPage.js"
 import {HomePage} from "../pages/homePage.js"
 import {test,expect} from "@playwright/test"
+import fs from 'fs';
 
+const filePath="testData/creds.json"
+const data=JSON.parse(fs.readFileSync(filePath,'utf-8'))
+//fs is file syatem, 
 
 test.describe("Login page- positive test cases", async() =>{
     test('login to amazon', async({page})=>{
@@ -11,7 +15,8 @@ test.describe("Login page- positive test cases", async() =>{
         home.clickToSignIn();
         await page.waitForTimeout(5000)
         const login=new LoginPage(page)
-        await login.loginToAmazon("sandhya.vanga@gmail.com","Aedbmakmrzon28");
+        await login.loginToAmazon(data.username, data.password);
+        console.log(data.products.productname)
         await page.waitForTimeout(5000)
 
 
