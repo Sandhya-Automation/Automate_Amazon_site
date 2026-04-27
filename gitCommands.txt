@@ -25,6 +25,12 @@ git log
 git push origin branchName
 ➡ Pushes the committed changes from your local branch to the remote repository. Replace branchName with the actual branch name.
 
-git stash
+git stash //when we use git pull, it will downloadd the latest code available in the
+main branch to you local, it there might be a danger of loosing the whatever code you have changed, so we have to satsh it, stash will keep the code changes somewhere safe. 
+in order to get the changes back into our local is git stash pop.
+
 git pull
+- git pull is to download the latest code to your local, befoer pull we have to stash it, 
 - to have all the code available in master to copy in a new branch and to integrate the vs code to the new branch, so when ever you push, it will ush the local code to the new branch
+
+git stash pop
