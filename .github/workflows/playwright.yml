@@ -2,12 +2,12 @@ name: Playwright Tests for 5th March
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:          ## to execut the testcase manually
 
-jobs:
+jobs:  # what to excute and setting software before excuting the code
   test:
     runs-on: ubuntu-latest      #which OS
 
