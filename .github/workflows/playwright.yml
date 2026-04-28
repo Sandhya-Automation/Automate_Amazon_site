@@ -2,9 +2,9 @@ name: Playwright Tests for 5th March
 
 on:
   push:   # push, worklow_displatch, pull_request and achedule are all pre-defined keys
-    branches: [ '**' ]
+    branches: [ master ]
   pull_request:
-    branches: [ '**' ]
+    branches: [ master ]
   workflow_dispatch:          ## to execut the testcase manually from pipeline
   schedule:
     -cron: 0 21 * * *        # minutes hourofday dayofmonth month dayofweek
