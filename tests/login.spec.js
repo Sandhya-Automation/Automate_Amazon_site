@@ -8,7 +8,7 @@ const data=JSON.parse(fs.readFileSync(filePath,'utf-8'))
 //fs is file syatem, 
 
 test.describe("Login page- positive test cases", async() =>{
-    test('login to amazon', async({page})=>{
+    test.only('login to amazon', async({page})=>{
         await page.goto('https://www.amazon.co.uk/');
         const home = new HomePage(page);
         await page.waitForTimeout(5000)
@@ -139,7 +139,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC12: Empty password field (valid email entered)
-    test.only('TC12 - Should display error when password field is empty', async({page})=>{
+    test('TC12 - Should display error when password field is empty', async({page})=>{
        const login = new LoginPage(page)
        await login.enterEmail("abc@gmail.com")
         await login.clickContinue();

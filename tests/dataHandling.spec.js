@@ -19,7 +19,7 @@ test("array", async() =>{
 })
 
 //////////////////////////////////////json/////////////////////////////
-test("json", async() =>{
+test.only("json", async() =>{
     const filePath="testData/creds.json"
     const data=JSON.parse(fs.readFileSync(filePath,'utf-8'))
     console.log(data)
@@ -28,9 +28,9 @@ test("json", async() =>{
 })
 
 //////////////////////////////////////Command line/////////////////////////////
-test.only("commandLine", async() =>{
-    const us1=process.env.usn
-    const pw1=process.env.pwd
+test("commandLine", async() =>{
+    const us1=process.env.URL
+    //const pw1=process.env.pwd
     console.log(us1)
     console.log(pw1)
 })
