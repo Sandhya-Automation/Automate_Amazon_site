@@ -6,8 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   workflow_dispatch:          ## to execut the testcase manually from pipeline
-  schedule:
-    -cron: 0 21 * * *        # minutes hourofday dayofmonth month dayofweek
+       # minutes hourofday dayofmonth month dayofweek
 
 jobs:  # what to excute and setting software before excuting the code
   test:
