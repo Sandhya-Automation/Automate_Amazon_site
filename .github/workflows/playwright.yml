@@ -1,11 +1,13 @@
 name: Playwright Tests for 5th March
 
 on:
-  push:
-    branches: [ master ]
+  push:   # push, worklow_displatch, pull_request and achedule are all pre-defined keys
+    branches: [ '**' ]
   pull_request:
-    branches: [ master ]
-  workflow_dispatch:          ## to execut the testcase manually
+    branches: [ '**' ]
+  workflow_dispatch:          ## to execut the testcase manually from pipeline
+  schedule:
+    -cron: 0 21 * * *        # minutes hourofday dayofmonth month dayofweek
 
 jobs:  # what to excute and setting software before excuting the code
   test:
@@ -27,8 +29,9 @@ jobs:  # what to excute and setting software before excuting the code
         run: npx playwright install --with-deps
 
       - name: Run Playwright Tests
-        run: npx playwright test
+        run: npx playwright test #to pass values run time- windows- set ${{url}} && mpx playwright test and for mac- ${{url}} npx playwright test
 
+  # to set secret values- run- ${{vars.URL}} ${{secrets.pw}} npx playwright test
       - name: Upload Playwright Report (for Pages)
         if: always()
         uses: actions/upload-pages-artifact@v3
