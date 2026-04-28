@@ -32,7 +32,7 @@ test("commandLine", async() =>{
     const us1=process.env.URL
     //const pw1=process.env.pwd
     console.log(us1)
-    console.log(pw1)
+    //console.log(pw1)
 })
 
 //data parameterisation
