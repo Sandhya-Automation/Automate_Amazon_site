@@ -50,6 +50,15 @@ test("commandLine", async() =>{
 // })
 // }
 
+// const arr=[["us1","pw1","success"],["us2","pw2","unsuccess"],["us3","pw3","success"]]
+
+// test.describe.each(arr)('data parameterisation', (username, password, status) => {
+//     test(`Test with ${username}`, async() => {
+//         console.log(username)
+//         console.log(password)
+//         console.log(status)
+//     })
+// })
 //////////////////////////////////////csv/////////////////////////////
 //csv is comma seperated values.
 //npm install csv-parse

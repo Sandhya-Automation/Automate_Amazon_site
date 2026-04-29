@@ -1,4 +1,4 @@
-name: Playwright Tests for 5th March
+name: Playwright Tests for Amazon site
 
 on:
   push:   # push, worklow_displatch, pull_request and achedule are all pre-defined keys

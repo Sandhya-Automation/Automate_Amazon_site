@@ -4,7 +4,7 @@ import {ResultsPage} from "../pages/resultsPage.js"
 
 import {test} from "@playwright/test"
 
-test("search for a product", async({page})=> {
+test("search for a product which are not apple", async({page})=> {
         await page.goto('https://www.amazon.co.uk/');
         const home = new HomePage(page);
         home.sortCookies();
