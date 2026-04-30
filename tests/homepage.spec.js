@@ -6,6 +6,7 @@ import { HomePage } from '../pages/homePage';
 //test.describe.configure({mode:'serial'})
 test.describe('Homepage tests', () => {
     test('validate home page elements', async ({page}) =>{
+        
         await page.goto('https://www.amazon.co.uk/');
         const home = new HomePage(page);
         await page.waitForTimeout(5000)

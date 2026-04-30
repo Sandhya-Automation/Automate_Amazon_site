@@ -1,0 +1,36 @@
+git init // to initialise the git 
+git --version 
+git config --global user.name "username"
+git config --global password "password"
+➡ Sets your Git username globally for all repositories on your system. 
+
+3️⃣ git add .
+➡ Adds all modified and new files in the current directory to the staging area.
+
+git commit -m 'your message'
+➡ Saves the staged changes with a commit message.
+
+git remote add origin master
+➡ Links your local repository to a remote repository, Replace repoLink with your actual repository URL.
+
+ls -a
+➡ Lists all files, including hidden files, in the current directory.
+
+git status
+➡ Shows the current state of your working directory, including modified, staged, and untracked files.
+
+git log
+➡ Displays the commit history of the repository, showing commit messages, authors, and timestamps.
+
+git push origin branchName
+➡ Pushes the committed changes from your local branch to the remote repository. Replace branchName with the actual branch name.
+
+git stash //when we use git pull, it will downloadd the latest code available in the
+main branch to you local, it there might be a danger of loosing the whatever code you have changed, so we have to satsh it, stash will keep the code changes somewhere safe. 
+in order to get the changes back into our local is git stash pop.
+
+git pull
+- git pull is to download the latest code to your local, befoer pull we have to stash it, 
+- to have all the code available in master to copy in a new branch and to integrate the vs code to the new branch, so when ever you push, it will ush the local code to the new branch
+
+git stash pop

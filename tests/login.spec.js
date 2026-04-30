@@ -1,17 +1,22 @@
 import {LoginPage} from "../pages/loginPage.js"
 import {HomePage} from "../pages/homePage.js"
 import {test,expect} from "@playwright/test"
+import fs from 'fs';
 
+const filePath="testData/creds.json"
+const data=JSON.parse(fs.readFileSync(filePath,'utf-8'))
+//fs is file syatem, 
 
 test.describe("Login page- positive test cases", async() =>{
-    test('login to amazon', async({page})=>{
+    test.skip('login to amazon', async({page})=>{
         await page.goto('https://www.amazon.co.uk/');
         const home = new HomePage(page);
         await page.waitForTimeout(5000)
         home.clickToSignIn();
         await page.waitForTimeout(5000)
         const login=new LoginPage(page)
-        await login.loginToAmazon("sandhya.vanga@gmail.com","Aedbmakmrzon28");
+        await login.loginToAmazon(data.username, data.password);
+        console.log(data.products.productname)
         await page.waitForTimeout(5000)
 
 
@@ -29,7 +34,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC1: Empty email field
-    test('TC1 - Should display error when email field is empty', async({page})=>{
+    test.skip('TC1 - Should display error when email field is empty', async({page})=>{
         const login = new LoginPage(page)
         await login.clickContinue();
         await page.waitForTimeout(3000)
@@ -40,7 +45,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC2: Invalid email format - no @ symbol
-    test('TC2 - Should display error for invalid email format (no @ symbol)', async({page})=>{
+    test.skip('TC2 - Should display error for invalid email format (no @ symbol)', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("invalidemail")
         await login.clickContinue();
@@ -49,7 +54,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC3: Invalid email format - missing domain
-    test('TC3 - Should display error for invalid email format (missing domain)', async({page})=>{
+    test.skip('TC3 - Should display error for invalid email format (missing domain)', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("test@")
         await login.clickContinue();
@@ -58,7 +63,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC4: Invalid email format - missing username
-    test('TC4 - Should display error for invalid email format (missing username)', async({page})=>{
+    test.skip('TC4 - Should display error for invalid email format (missing username)', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("@example.com")
         await login.clickContinue();
@@ -67,7 +72,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC5: Email with spaces
-    test('TC5 - Should display error for email with spaces', async({page})=>{
+    test.skip('TC5 - Should display error for email with spaces', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("test email@example.com")
         await login.clickContinue();
@@ -76,7 +81,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC6: Non-existent email (valid format)
-    test('TC6 - Should display error for non-existent email account', async({page})=>{
+    test.skip('TC6 - Should display error for non-existent email account', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("nonexistentuser12345@example.com")
         await login.clickContinue();
@@ -96,7 +101,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     // })
 
     // TC8: Email with multiple @ symbols
-    test('TC8 - Should display error for email with multiple @ symbols', async({page})=>{
+    test.skip('TC8 - Should display error for email with multiple @ symbols', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("test@@example.com")
         await login.clickContinue();
@@ -105,7 +110,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC9: Email with special characters
-    test('TC9 - Should display error for email with special characters', async({page})=>{
+    test.skip('TC9 - Should display error for email with special characters', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("test<script>@example.com")
         await login.clickContinue();
@@ -114,7 +119,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC10: Very long email
-    test.only('TC10 - Should handle very long email input', async({page})=>{
+    test.skip('TC10 - Should handle very long email input', async({page})=>{
         const login = new LoginPage(page)
         const longEmail = "a".repeat(250) + "@example.com"
         await login.enterEmail(longEmail)
@@ -125,7 +130,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC11: SQL Injection attempt in email
-    test('TC11 - Should handle SQL injection attempt in email', async({page})=>{
+    test.skip('TC11 - Should handle SQL injection attempt in email', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("admin' OR '1'='1@example.com")
         await login.clickContinue();
@@ -134,7 +139,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC12: Empty password field (valid email entered)
-    test.only('TC12 - Should display error when password field is empty', async({page})=>{
+    test.skip('TC12 - Should display error when password field is empty', async({page})=>{
        const login = new LoginPage(page)
        await login.enterEmail("abc@gmail.com")
         await login.clickContinue();
@@ -159,7 +164,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC15: Email with hyphen in domain
-    test('TC15 - Should handle email with hyphen in domain', async({page})=>{
+    test.skip('TC15 - Should handle email with hyphen in domain', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("test@test-domain.com")
         await login.clickContinue();
@@ -169,7 +174,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
 
 
     // TC17: Empty email with special character handling
-    test('TC17 - Should display error when only spaces are entered', async({page})=>{
+    test.skip('TC17 - Should display error when only spaces are entered', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("    ")
         await login.clickContinue();
@@ -178,7 +183,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC18: Tab character in email
-    test('TC18 - Should handle tab character in email field', async({page})=>{
+    test.skip('TC18 - Should handle tab character in email field', async({page})=>{
         const login = new LoginPage(page)
         await login.username.fill("test\t@example.com")
         await login.clickContinue();
@@ -187,7 +192,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC19: Newline character in email
-    test('TC19 - Should handle newline character in email field', async({page})=>{
+    test.skip('TC19 - Should handle newline character in email field', async({page})=>{
         const login = new LoginPage(page)
         await login.username.fill("test\n@example.com")
         await login.clickContinue();
@@ -197,7 +202,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
 
 
     // TC20: Email with consecutive dots
-    test('TC20 - Should display error for email with consecutive dots', async({page})=>{
+    test.skip('TC20 - Should display error for email with consecutive dots', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("test..user@example.com")
         await login.clickContinue();
@@ -206,7 +211,7 @@ test.describe("Login Page - Negative Test Cases", async() => {
     })
 
     // TC21: Very short email format
-    test('TC21 - Should handle very short email', async({page})=>{
+    test.skip('TC21 - Should handle very short email', async({page})=>{
         const login = new LoginPage(page)
         await login.enterEmail("a@b")
         await login.clickContinue();

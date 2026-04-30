@@ -25,3 +25,29 @@ test.only("verify the product in cart", async({page})=>{
     await page.waitForTimeout(10000)
 
 })
+
+// test("add two products and verify the cart", async({page})=>{
+//     await page.goto('https://www.amazon.co.uk/');
+//     const home = new HomePage(page);
+//     await home.sortCookies();
+//     await home.searchProduct("iphone 17 pro max");
+//     const resultsObj=new ResultsPage(page);
+//     await page.waitForTimeout(8000)
+//     await resultsObj.selectTheRightProduct();
+//     const productName=await resultsObj.getTheProductName()
+//     const productObj=new ProductPage(page)
+//     console.log("Product Name is:",productName)
+//     productObj.addToCart()
+//     await page.waitForTimeout(5000)
+
+//     await home.searchProduct("samsung");
+//     const resultsObj=new ResultsPage(page);
+//     await page.waitForTimeout(8000)
+//     await resultsObj.selectTheRightProduct();
+//     const productName=await resultsObj.getTheProductName()
+//     const productObj=new ProductPage(page)
+//     console.log("Product Name is:",productName)
+//     productObj.addToCart()
+//     await page.waitForTimeout(5000)
+
+// })

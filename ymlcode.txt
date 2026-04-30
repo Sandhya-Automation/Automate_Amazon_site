@@ -1,0 +1,13 @@
+name: Playwright test for amazon
+on:
+
+jobs:
+runs on: UBUNTU-latest
+
+steps:
+- name: Checkout Repository
+  uses: actions/checkout@v4
+
+  -name: Setup Node.jobs
+   uses: actions/setup-node@v4
+
