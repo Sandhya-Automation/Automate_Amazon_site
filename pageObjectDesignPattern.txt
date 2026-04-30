@@ -1,0 +1,7 @@
+1. explain testsfolder
+2. explain pagesfolder
+3. explain testData folder
+4. explain playwright.config.js file
+5. explain package.json file
+6. explain utils folder
+7. explain playwright.yml file
