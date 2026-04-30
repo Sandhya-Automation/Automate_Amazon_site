@@ -22,7 +22,7 @@ jobs:  # what to excute and setting software before excuting the code
           node-version: 18
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm ci --omit=optional
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
