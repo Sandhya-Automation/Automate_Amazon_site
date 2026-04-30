@@ -37,28 +37,21 @@ test("commandLine", async() =>{
 
 //data parameterisation
 //multi dimensional array
-//to regularise out test case we need to use $ symbol- ${i}
+//to regularise our test case we need to use $ symbol- ${i}
 //////////////////////////////////////Data parameterisation/////////////////////////////
-// const arr=[["us1","pw1","success"],["us2","pw2","unsuccess"],["us3","pw3","success"]]
-// //method 1
-// for(let i=0;i<arr.length;i++){
+const arr=[['admin','us1','pw1'], ['staff','us2','pw2'], ['user','us3','pw3']]
+for(let i=0;i<arr.length;i++)
+{
+test(`data parameterisation ${i}`, async()=>{
 
-//     test("data parametarisation", async() =>{
-//     console.log(arr[i][0])
-//     console.log(arr[i][1])
-//     console.log(arr[i][2])
-// })
-// }
-
-// const arr=[["us1","pw1","success"],["us2","pw2","unsuccess"],["us3","pw3","success"]]
-
-// test.describe.each(arr)('data parameterisation', (username, password, status) => {
-//     test(`Test with ${username}`, async() => {
-//         console.log(username)
-//         console.log(password)
-//         console.log(status)
-//     })
-// })
+    if(arr[i][0]==='admin')
+    {
+        console.log(arr[i][0])
+        console.log(arr[i][1])
+        console.log(arr[i][2])
+    }
+})
+}
 //////////////////////////////////////csv/////////////////////////////
 //csv is comma seperated values.
 //npm install csv-parse
