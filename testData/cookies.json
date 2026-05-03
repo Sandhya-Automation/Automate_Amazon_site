@@ -1,0 +1,195 @@
+{
+  "cookies": [
+    {
+      "name": "aws-waf-token",
+      "value": "8f130188-882c-48fb-a57f-c921cab0db2b:CwoAlQFd+IZbAAAA:XwYKc3pKsGwYnWOBMx334Naw+MIV+9BPZTHfLLKVDtaOrF/zgPj8sN7zZ9tc4lTolKVdHLtqQKPwRvJPvq43jxV1/ZOnTxthxtQRsSTV81UPwFDE+KG4tvp627Ptj4GZ0Y7FksjcFW5JHGnvANZ0oICXtdj8xXUQ+ejJICjBoD61Nq659VPmT1c7DY7vgO8F86FMSI2i9tuDc37nKV9ibq0=",
+      "domain": ".www.amazon.co.uk",
+      "path": "/",
+      "expires": 1777987562,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "session-id",
+      "value": "522-1672520-8242627",
+      "domain": ".amazon.co.uk",
+      "path": "/",
+      "expires": 1812201974.198245,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "i18n-prefs",
+      "value": "GBP",
+      "domain": ".amazon.co.uk",
+      "path": "/",
+      "expires": 1809177971.090841,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lc-acbuk",
+      "value": "en_GB",
+      "domain": ".amazon.co.uk",
+      "path": "/",
+      "expires": 1809177971.090891,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ad-privacy",
+      "value": "0",
+      "domain": ".amazon-adsystem.com",
+      "path": "/",
+      "expires": 1812201964.834924,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ubid-acbuk",
+      "value": "259-7744442-6991210",
+      "domain": ".amazon.co.uk",
+      "path": "/",
+      "expires": 1809177973.825941,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rxc",
+      "value": "AORNPz0DkptpYr/6M30",
+      "domain": "www.amazon.co.uk",
+      "path": "/",
+      "expires": 1777728365.735988,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "id_pkel",
+      "value": "n0",
+      "domain": "www.amazon.co.uk",
+      "path": "/",
+      "expires": 1777642872,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "id_pk",
+      "value": "eyJuIjoiMCIsImNjIjoiMSJ9",
+      "domain": "www.amazon.co.uk",
+      "path": "/",
+      "expires": 1777642872,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "csm-hit",
+      "value": "tb:FSAQWBAHFAXYQ55E4DW3+s-1WY4AYASFJ3KVV9Z2DXN|1777641972210&t:1777641972210&adb:adblk_no",
+      "domain": "www.amazon.co.uk",
+      "path": "/",
+      "expires": 1807881972,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "session-id-time",
+      "value": "2082787201l",
+      "domain": ".amazon.co.uk",
+      "path": "/",
+      "expires": 1812201974.198485,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "session-token",
+      "value": "CiBNSEg28YxdGWvXiBm/lfnsPy+KQj+WlQXLupmGsEYfd3FanELmDUKhEDUkdAMvHxkfeA1zVOGKRgYu5b2u9OKZxHc6YCEfsDvwP8/Hqkb93xXi//ljh8dPgLADdEA5KoeyW/kXOWpbZksDUZaeZCPk+Mwe80WB3ei7c0r44DW4k3d+VikhjHvDNQZ/HC58rK8bJAyQZUJ1fhIr94dNBrcOIgzVvV+OSuZWo/fXCW4=",
+      "domain": ".amazon.co.uk",
+      "path": "/",
+      "expires": 1812201974.198616,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.amazon.co.uk",
+      "localStorage": [
+        {
+          "name": "aws_waf_token_challenge_attempts",
+          "value": "{\"attempts\":1,\"lastAttemptTimestamp\":1777641962234}"
+        },
+        {
+          "name": "sp-cc-pcl",
+          "value": "eyJwcmluY2lwYWwiOiI1MjItMTY3MjUyMC04MjQyNjI3fDAiLCJwcm9tcHRzIjpbMTc3NzY0MTk2NDc0MV19"
+        },
+        {
+          "name": "csm-bf",
+          "value": "[\"1WY4AYASFJ3KVV9Z2DXN\",\"HKANDVFFEVTFHE9B84WP\",\"FSAQWBAHFAXYQ55E4DW3\"]"
+        },
+        {
+          "name": "a-font-class",
+          "value": "a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-0 a-ember-modern-text a-ember-modern-text-1-0-0"
+        },
+        {
+          "name": "amznfbgid",
+          "value": "X10-4661642-5958508:1777641967"
+        },
+        {
+          "name": "csm:adb",
+          "value": "adblk_no"
+        },
+        {
+          "name": "puff:suppression",
+          "value": "{\"522-1672520-8242627\":{\"disabled\":false,\"suppressUntil\":\"2026-05-01T14:26:05.277Z\",\"suppressionMessage\":\"Customer is unrecognized\"}}"
+        },
+        {
+          "name": "rx",
+          "value": "AORNPz2VGQpmAISBXiSXDqe2WYKbDbloSNYjRnbnwe3hjaw42QjcxpE87thsbcnQinu4JTq+qvHq3dRmPYM+OEiP922FMKze2wPgrPjli72MLaZ+58naOcxtwfdwF6KatpF8B7+qUZIHLaxXKd0P9EYUMAelEE9+z8zJw4EYwXmbDQg6nQG0LddoT7gyJRiYZkTYktUXLoaQhRgc65wl42AnN82HytUGoompEMbi1WdeoD3urSwhR6hH4kekWWhUOywzXY6VdeCXKVcDoTouR1rzljLabnwGqeE/gxPGQuuQQ1e9ebJG8nLYXk0bKQmPznsf5j9YfGRwiY/ZSIL3fFRMRuzPngl5cYq8EWatzXj1CvYWy1Gctjts/vsKJRLXtqHLOdAoaW6YwC+ZaM4FtbESh7xhPzSSJKd54A"
+        },
+        {
+          "name": "csa-ctoken-FSAQWBAHFAXYQ55E4DW3",
+          "value": "1777645563473"
+        },
+        {
+          "name": "csa-tabbed-browsing",
+          "value": "{\"lastActive\":{\"visible\":false,\"pid\":\"ug3ci0-3s9igi-ln2bq5-wmvjnv\",\"tid\":\"geui5r-t8uocb-63umq6-17x5ul\",\"ent\":{\"rid\":\"1WY4AYASFJ3KVV9Z2DXN\",\"ety\":\"AuthenticationPortal\",\"esty\":\"SignInPwdCollect\"}},\"lastInteraction\":{\"id\":\"pz4ndv-92inc2-i9avlu-k07cjd\",\"used\":false},\"time\":1777641972149,\"initialized\":true}"
+        },
+        {
+          "name": "aws_waf_referrer",
+          "value": "{\"referrer\":\"\"}"
+        },
+        {
+          "name": "csa-ctoken-1WY4AYASFJ3KVV9Z2DXN",
+          "value": "1777645572149"
+        },
+        {
+          "name": "awswaf_token_refresh_timestamp",
+          "value": "1777641962385"
+        },
+        {
+          "name": "csm-hit",
+          "value": "tb:FSAQWBAHFAXYQ55E4DW3+s-1WY4AYASFJ3KVV9Z2DXN|1777641972210&t:1777641972210&adb:adblk_no"
+        },
+        {
+          "name": "csa-ctoken-HKANDVFFEVTFHE9B84WP",
+          "value": "1777645569151"
+        },
+        {
+          "name": "rx-pnt",
+          "value": "1777641962|1"
+        }
+      ]
+    }
+  ]
+}

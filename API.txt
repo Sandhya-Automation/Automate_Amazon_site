@@ -1,0 +1,55 @@
+API - Application Program Interface
+
+1.getting/fetching the data from db - GET
+2.creating new data - POST
+3.updating the existing data - PUT and PATCH
+4.deleting the data - DELETE
+
+
+Statuses:
+200- OK- request successful
+201- created (POST success)
+204- no content (no body)
+303- redirect url
+400- wrong input or data or bad request
+401- whatever data is needed and it's missing like bearer - token missing
+    or if any fields are mandatory like price and we are not providing that data while the request, it will throw 401
+    or unathorised
+403- don't have access - wrong username or password
+404 - page not found- request not successful
+422- validation error
+500- internal server error
+502- bad gateway
+503- service unavailable
+
+2xx->success
+4xx->your mistake
+5xx->server mistake
+
+
+
+
+Auth:
+1. Basic auth- we need to privide username and password
+2. Bearer token- we need a token to access
+
+POST-
+we need to give-
+url
+auth
+data to insert -inside body in the form of json
+
+status:
+201
+400
+403
+
+PUT- for updatingput-we have to give all the fields
+PATCH- we can only give what we want to update
+
+status:
+201
+403
+
+
+

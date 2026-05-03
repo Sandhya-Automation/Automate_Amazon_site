@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "productsearchtest": "npx playwright test productpage.spec.js --headed",
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

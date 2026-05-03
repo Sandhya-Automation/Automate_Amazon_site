@@ -12,10 +12,10 @@ test("add the product to cart", async({page})=>{
     const resultsObj=new ResultsPage(page);
     await page.waitForTimeout(8000)
     const productName=await resultsObj.getTheProductName()
-    await resultsObj.selectTheRightProduct();
+    //await resultsObj.selectTheRightProduct();
     const productObj=new ProductPage(page)
     await console.log("Product Name is:",productName)
-    productObj.addToCart()
+    productObj.addToCart(productName)
     await page.waitForTimeout(5000)
     productObj.goToBasket();
     await page.waitForTimeout(10000)

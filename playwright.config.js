@@ -45,9 +45,17 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    // {
+    //   name:'loginSetup',
+    //   testMatch:'tests/session.js'
+    // },
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], launchOptions:{slowMo:1000},
+       //storageState: 'testData/cookies.json',
+       },
+       //dependencies: ['loginSetup'] 
+    
     },
 
     // {

@@ -10,6 +10,8 @@ export class LoginPage{
         this.signinBtn=page.locator("#signInSubmit")
         this.errorAlert=page.locator("//div[@class='a-alert-content']").first()
         this.errorMessage=page.locator("//div[@class='a-box-inner']//h4")
+        this.verifyMessage=page.locator("//*[contains(text(),'Verify using WhatsApp instead')]")
+
 
     }
     
@@ -24,7 +26,11 @@ export class LoginPage{
     async enterEmail(email){
         await this.username.fill(email)
     }
-
+    async verifyMessageAfterLogin(){
+        const text = await this.verifyMessage.textContent()
+        console.log(text)
+        await expect(this.verifyMessage).toContainText("Verify")
+    }
     async clickContinue(){
         await this.continueBtn.click()
     }

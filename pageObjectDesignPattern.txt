@@ -5,3 +5,14 @@
 5. explain package.json file
 6. explain utils folder
 7. explain playwright.yml file
+
+
+//debugging techniques
+1. validating the report and the screenshot
+2. trace viewer
+3. --headed 
+4. page.pause (debugger mode) dubugger uses the playwright inspector to display the data 
+5. excution in slow mode
+
+Flaky test-
+- it means, there is nothing wrong with the code but it failed because of the network is slow and time it takes to load the elements, it fails. if we retry the execution, it may pass second or third. this is called flaky tests.

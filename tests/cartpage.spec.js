@@ -5,10 +5,10 @@ import {ProductPage} from "../pages/productPage.js"
 import {CartPage} from "../pages/cartPage.js"
 import {test} from "@playwright/test"
 
-test.only("verify the product in cart", async({page})=>{
+test("verify the product in cart", async({page})=>{
     await page.goto('https://www.amazon.co.uk/');
     const home = new HomePage(page);
-    await home.sortCookies();
+    //await home.sortCookies();
     await home.searchProduct("iphone 17 pro max");
     const resultsObj=new ResultsPage(page);
     await page.waitForTimeout(8000)
